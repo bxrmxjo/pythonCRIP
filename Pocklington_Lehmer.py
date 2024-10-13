@@ -62,23 +62,20 @@ def pocklington_lehmer_generalizado(n):
         i += 2
 
 
-    # Probar varios valores de a
-    is_prime = True
-
     for f in factores_primos_A: #Tratamos de buscar nuestro a_p
-
+        is_prime = False
         # Comprobamos las condiciones de Pocklington-Lehmer
         for a in range(2, n-2):
             # Calculamos a^((n-1)/d) mod n usando pow()
-            if pow(a, n_menos_1 // f, n) == 1:
-                if gcd_binario_tail_rec_fancy(pow(a,(n-1)//f),n) == 1:
+            if pow(a, n_menos_1, n) == 1:
+                if gcd_binario_tail_rec_fancy(pow(a,(n-1)//f)-1,n) == 1:
                     is_prime = True 
-                    print(a," Se ha encontrado")
                     break              
-            else: 
+            else:
                 return False #n no es primo como consecuencia del pequeño teorema de Fermat
+        if is_prime == False:
+            return "No decide" #Ningún valor "a" de los posibles encaja con lo buscado, luego no podemos decidir
         
-
 
     return is_prime
 
