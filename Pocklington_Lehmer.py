@@ -74,7 +74,7 @@ def pocklington_lehmer_generalizado(n):
             else:
                 return False #n no es primo como consecuencia del pequeño teorema de Fermat
         if is_prime == False:
-            return "No decide" #Ningún valor "a" de los posibles encaja con lo buscado, luego no podemos decidir
+            return "Ningún valor de a sirve" #Ningún valor "a" de los posibles encaja con lo buscado, luego no podemos decidir
         
 
     return is_prime
