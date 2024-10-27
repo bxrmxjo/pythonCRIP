@@ -29,7 +29,7 @@ fact = [7,47]
 print("\n","N = ",N,"\n","Nº dígitos de N: ",len(str(N)),"\n","fact = ",fact,"\n", "¿Es N primo?: ", po.pocklington_lehmer_generalizado(fact,N))
 
 #Verificación de primalidad de algunos primos de Proth
-ENE = [449,3137,11777,133121,219649,3452929,15998977]
+ENE = [449,3137,11777,133121,219649,3452929,15998977,93290497,149962753]
 for t in ENE:
     inicio = time.time()
     res = po.pocklington_lehmer_generalizado([2],t)
