@@ -51,15 +51,3 @@ def pocklington_lehmer_generalizado(factores_primos_A:list, n:int):
 
     return is_prime
  
-
-#Primos proth
-ENE = [449,3137,11777,133121,219649]
-for t in ENE:
-    inicio = time.time()
-    res = pocklington_lehmer_generalizado([2],t)
-    fin = time.time()
-    print(f"{t} verifica ser primo: {res}.    TT: {(fin - inicio):.6f}")
-
-
-
-
