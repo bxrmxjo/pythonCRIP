@@ -1,4 +1,6 @@
-import math,sys,time
+import math
+import sys
+import time
 import Pocklington_lehmer as po
 
 
