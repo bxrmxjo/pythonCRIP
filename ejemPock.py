@@ -32,6 +32,6 @@ print("\n","N = ",N,"\n","Nº dígitos de N: ",len(str(N)),"\n","fact = ",fact,"
 ENE = [449,3137,11777,133121,219649,3452929,15998977]
 for t in ENE:
     inicio = time.time()
-    res = pocklington_lehmer_generalizado([2],t)
+    res = po.pocklington_lehmer_generalizado([2],t)
     fin = time.time()
     print(f"{t} verifica ser primo: {res}.    TT: {(fin - inicio):.6f}s")
