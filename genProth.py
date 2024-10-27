@@ -1,7 +1,7 @@
 import math
 import sys
 import time
-import Pocklington_lehmer as po
+import Pocklington_Lehmer as po
 
 
 #https://oeis.org/A080076/b080076.txt lista de primos de proth ordenados.
