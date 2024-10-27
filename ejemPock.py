@@ -1,5 +1,6 @@
 import Pocklington_Lehmer as po
 import random
+import sys
 sys.set_int_max_str_digits(1000000000)
 
 N = 1<<20000 + 1
