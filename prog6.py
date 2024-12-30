@@ -1,6 +1,8 @@
 """
-Código escrito por Mario Bermejo Cuervo.
-email: maberm08@ucm.es
+Código escrito por Mario Bermejo Cuervo (maberm08@ucm.es) en colaboración con 
+Pablo Esteve Sánchez
+Alberto Herencia Arce
+Pablo Esteve Sánchez.
 """
 
 def suma_f27(a, b):
@@ -11,7 +13,7 @@ def suma_f27(a, b):
     return resultado
 
 def negativo_f27(elemento):
-    """Devuelve el negativo de un elemento en F27"""
+    """Devuelve el opuesto de un elemento de F27"""
     resultado = [0, 0, 0]
     for i in range(3):
         resultado[i] = (-elemento[i]) % 3
@@ -32,7 +34,7 @@ def distancia(w1, w2):
     return dist
 
 def generar_elementos_f27():
-    """Genera todos los elementos posibles de F27"""
+    """Genera todos los elementos de F27"""
     elementos = []
     for a in range(3):
         for b in range(3):
@@ -68,7 +70,7 @@ def palabra_mas_cercana(w):
     por lo que devolerá una de las palabras cuya distancia a w sea la mínima posible.
     """
     palabras_codigo = generar_palabras_codigo()
-    distancia_min = 5 #Inicializamos la distancia en el máximo valor que pueda tomar.
+    distancia_min = 6 #Inicializamos la distancia en un valor "imposible" bajo las condiciones del enunciado (para interpretar posibles errores si fuera necesario)
     palabra_cercana = None 
     
     for palabra in palabras_codigo:
@@ -78,3 +80,4 @@ def palabra_mas_cercana(w):
             palabra_cercana = palabra
 
     return palabra_cercana
+
